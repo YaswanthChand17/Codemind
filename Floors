@@ -1,0 +1,18 @@
+Kishor is in a building with 100 floors. He uses the stairs for moving up two floors or less or moving down three floors or less, and uses the elevator otherwise.
+Does he use the stairs to move from floor X to floor Y?
+Sample Input: 99
+              96
+Sample Output:YES
+
+=int(input())
+b=int(input())
+if b>a:
+    if b-a<=2:
+        print("YES")
+    else:
+        print("NO")
+else:
+    if a-b<=3:
+        print("YES")
+    else:
+        print("NO")
