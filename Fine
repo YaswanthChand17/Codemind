@@ -1,0 +1,7 @@
+a=int(input())
+if a<=7:
+  print("$ 0")
+elif 8<=a<=30:
+  print("$",a*1)
+else:
+  print("$",a*5)
