@@ -1,0 +1,11 @@
+def fibonacci(l,u):
+    a,b=0,1
+    fs=[]
+    while a<=u:
+        if a>=l:
+            fs.append(a)
+        a,b=b,a+b
+    return fs
+x,y=map(int,input().split())
+res=fibonacci(x,y)
+print(*res)
