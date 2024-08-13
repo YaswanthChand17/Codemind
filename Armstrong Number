@@ -1,0 +1,11 @@
+def armstrong(n):
+    t=str(n)
+    l=len(t)
+    for i in t:
+        su+=i**l
+    return su==n
+n=int(input())
+if armstrong(n):
+    print("YES")
+else:
+    print("NO")
