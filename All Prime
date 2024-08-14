@@ -1,0 +1,13 @@
+Your Program should output "True" if all digits in input number are prime, and "False" if any digit is not prime.
+
+def all_prime(n):
+    x={'2','3','5','7'}
+    for i in str(n):
+        if i not in x:
+            return False
+    return True
+n=int(input())
+if all_prime(n):
+    print("True")
+else:
+    print("False")
