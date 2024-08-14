@@ -1,0 +1,16 @@
+def bin_to_dec(binary):
+    d=0
+    power=0
+    for i in reversed(binary):
+        d+=int(i)*(2**power)
+        power+=1
+    return d
+b=input()
+res=bin_to_dec(b)
+print(res)
+
+or
+
+binary=input()
+decimal=int(binary,2)
+print(decimal)
