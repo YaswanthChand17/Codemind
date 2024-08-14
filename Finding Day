@@ -1,0 +1,25 @@
+Meet Lisa, a project manager who is always planning ahead for her team's tasks and deadlines. She often needs to know what day of the week a specific date will fall on, based on the current day.
+For instance, if today is Sunday (which corresponds to 0 in her system), and she wants to know what day of the week the 27th day from today will be, she has created a simple program to provide her with the answer.Here's how Lisa's program works: She assigns numbers to the days of the week:
+0 for Sunday
+1 for Monday
+2 for Tuesday
+3 for Wednesday
+4 for Thursday
+5 for Friday
+6 for Saturday
+She inputs the current day (e.g., 0 for Sunday). She inputs the number of days into the future she wants to calculate (e.g., 27).
+Her program calculates the day of the week for the future date.For example, if Lisa inputs 0 for Sunday and 27 for the number of days, her program will tell her that the 27th day from Sunday will be a Wednesday.
+Input Format: First line Consist of number indicates Day
+                       Second line Consist of Days Count
+OutPut Format:Single line output it Should be "Sunday or Monday or Tuesday or Wednesday or Thursday or Friday or Saturday"
+Sample Input: 2
+              10
+Sample Output: Friday
+
+Code:
+a=int(input()) 
+b=int(input()) 
+x=(a+b)%7
+days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+res=days[x]
+print(res)
